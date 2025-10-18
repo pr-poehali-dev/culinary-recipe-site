@@ -5,8 +5,47 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 
 const recipes = [
+  // Завтраки
   {
     id: 1,
+    title: 'Пышные панкейки с ягодами',
+    category: 'Завтраки',
+    time: '20 мин',
+    difficulty: 'Лёгкая',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/4ab42fe6-cbc2-4c53-9489-7c54eb2af640.jpg',
+    description: 'Воздушные американские панкейки с кленовым сиропом и свежими ягодами'
+  },
+  {
+    id: 2,
+    title: 'Яичница-болтунья с тостами',
+    category: 'Завтраки',
+    time: '10 мин',
+    difficulty: 'Лёгкая',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/7356109f-7ae8-4ebc-a2e5-591ad98f9742.jpg',
+    description: 'Нежная яичница с зеленью на хрустящих тостах'
+  },
+  {
+    id: 3,
+    title: 'Овсяная каша с фруктами',
+    category: 'Завтраки',
+    time: '15 мин',
+    difficulty: 'Лёгкая',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/4ab42fe6-cbc2-4c53-9489-7c54eb2af640.jpg',
+    description: 'Полезная овсянка с мёдом, орехами и свежими фруктами'
+  },
+  {
+    id: 4,
+    title: 'Французские тосты',
+    category: 'Завтраки',
+    time: '15 мин',
+    difficulty: 'Лёгкая',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/7356109f-7ae8-4ebc-a2e5-591ad98f9742.jpg',
+    description: 'Ароматные тосты в яичной смеси с корицей и сахарной пудрой'
+  },
+
+  // Основные блюда
+  {
+    id: 5,
     title: 'Паста Карбонара',
     category: 'Основные блюда',
     time: '30 мин',
@@ -15,7 +54,121 @@ const recipes = [
     description: 'Классическая итальянская паста с беконом и сливочным соусом'
   },
   {
-    id: 2,
+    id: 6,
+    title: 'Лосось на гриле с овощами',
+    category: 'Основные блюда',
+    time: '25 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/08d546fe-1645-428f-b479-d840bfb54e73.jpg',
+    description: 'Сочный лосось на гриле с лимоном и спаржей'
+  },
+  {
+    id: 7,
+    title: 'Бефстроганов',
+    category: 'Основные блюда',
+    time: '45 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/a09bc46e-2c84-4663-9a4b-bd05bf289fc1.jpg',
+    description: 'Нежная говядина с грибами в сливочном соусе'
+  },
+  {
+    id: 8,
+    title: 'Курица терияки с рисом',
+    category: 'Основные блюда',
+    time: '35 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/a09bc46e-2c84-4663-9a4b-bd05bf289fc1.jpg',
+    description: 'Куриное филе в сладко-остром соусе терияки с кунжутом'
+  },
+  {
+    id: 9,
+    title: 'Ризотто с грибами',
+    category: 'Основные блюда',
+    time: '40 мин',
+    difficulty: 'Сложная',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/3e7e287f-2042-428f-874f-e48e74afb01f.jpg',
+    description: 'Кремовое итальянское ризотто с белыми грибами и пармезаном'
+  },
+
+  // Супы
+  {
+    id: 10,
+    title: 'Куриный суп с лапшой',
+    category: 'Супы',
+    time: '50 мин',
+    difficulty: 'Лёгкая',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/07bc8ee7-664f-41ff-8d43-0ea35d639999.jpg',
+    description: 'Домашний куриный бульон с овощами и яичной лапшой'
+  },
+  {
+    id: 11,
+    title: 'Крем-суп из грибов',
+    category: 'Супы',
+    time: '35 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/5f4acdd7-5408-468a-a60b-eb6a2e5d1a3c.jpg',
+    description: 'Нежный крем-суп из шампиньонов со сливками'
+  },
+  {
+    id: 12,
+    title: 'Борщ',
+    category: 'Супы',
+    time: '90 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/07bc8ee7-664f-41ff-8d43-0ea35d639999.jpg',
+    description: 'Классический украинский борщ на говяжьем бульоне'
+  },
+  {
+    id: 13,
+    title: 'Том Ям',
+    category: 'Супы',
+    time: '40 мин',
+    difficulty: 'Сложная',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/5f4acdd7-5408-468a-a60b-eb6a2e5d1a3c.jpg',
+    description: 'Острый тайский суп с морепродуктами и кокосовым молоком'
+  },
+
+  // Салаты
+  {
+    id: 14,
+    title: 'Греческий салат',
+    category: 'Салаты',
+    time: '15 мин',
+    difficulty: 'Лёгкая',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/513f16f9-3b9c-4259-9dab-87797f4f7667.jpg',
+    description: 'Свежий салат с фетой, оливками и помидорами'
+  },
+  {
+    id: 15,
+    title: 'Цезарь с курицей',
+    category: 'Салаты',
+    time: '20 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/7e9762b8-1f3d-4b4b-94ad-fcd9dc792385.jpg',
+    description: 'Классический Цезарь с курицей гриль и пармезаном'
+  },
+  {
+    id: 16,
+    title: 'Овощной салат',
+    category: 'Салаты',
+    time: '15 мин',
+    difficulty: 'Лёгкая',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/1838fc2d-8c10-4f3e-8fd4-916dcbb1d7d2.jpg',
+    description: 'Свежий салат из сезонных овощей с ароматными травами'
+  },
+  {
+    id: 17,
+    title: 'Салат Нисуаз',
+    category: 'Салаты',
+    time: '25 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/513f16f9-3b9c-4259-9dab-87797f4f7667.jpg',
+    description: 'Французский салат с тунцом, яйцом и анчоусами'
+  },
+
+  // Десерты
+  {
+    id: 18,
     title: 'Шоколадный торт',
     category: 'Десерты',
     time: '90 мин',
@@ -24,13 +177,78 @@ const recipes = [
     description: 'Нежный шоколадный торт с ягодами для особого случая'
   },
   {
-    id: 3,
-    title: 'Овощной салат',
-    category: 'Салаты',
-    time: '15 мин',
-    difficulty: 'Лёгкая',
-    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/1838fc2d-8c10-4f3e-8fd4-916dcbb1d7d2.jpg',
-    description: 'Свежий салат из сезонных овощей с ароматными травами'
+    id: 19,
+    title: 'Брауни с мороженым',
+    category: 'Десерты',
+    time: '45 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/91d466e1-807b-48b5-a0ae-4efe6831a858.jpg',
+    description: 'Сочный шоколадный брауни с ванильным мороженым'
+  },
+  {
+    id: 20,
+    title: 'Яблочный пирог',
+    category: 'Десерты',
+    time: '75 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/4828e8eb-83fa-45fb-8b77-d05f95523cfe.jpg',
+    description: 'Домашний пирог с яблоками и корицей'
+  },
+  {
+    id: 21,
+    title: 'Тирамису',
+    category: 'Десерты',
+    time: '30 мин + охлаждение',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/2fa96861-2aa8-445a-893f-dcc4446cae4d.jpg',
+    description: 'Классический итальянский десерт с маскарпоне и кофе'
+  },
+  {
+    id: 22,
+    title: 'Чизкейк Нью-Йорк',
+    category: 'Десерты',
+    time: '120 мин',
+    difficulty: 'Сложная',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/91d466e1-807b-48b5-a0ae-4efe6831a858.jpg',
+    description: 'Нежнейший творожный чизкейк на песочной основе'
+  },
+
+  // Выпечка
+  {
+    id: 23,
+    title: 'Круассаны',
+    category: 'Выпечка',
+    time: '180 мин',
+    difficulty: 'Сложная',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/4f3e9073-616b-4007-9d67-0e8d3034c9f3.jpg',
+    description: 'Французские слоёные круассаны с хрустящей корочкой'
+  },
+  {
+    id: 24,
+    title: 'Домашний хлеб',
+    category: 'Выпечка',
+    time: '240 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/0ee78851-55db-4eb0-8706-127e8a485c4d.jpg',
+    description: 'Ароматный хлеб на закваске с хрустящей корочкой'
+  },
+  {
+    id: 25,
+    title: 'Булочки с корицей',
+    category: 'Выпечка',
+    time: '90 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/4f3e9073-616b-4007-9d67-0e8d3034c9f3.jpg',
+    description: 'Мягкие сдобные булочки с корицей и сахарной глазурью'
+  },
+  {
+    id: 26,
+    title: 'Фокачча с розмарином',
+    category: 'Выпечка',
+    time: '120 мин',
+    difficulty: 'Средняя',
+    image: 'https://cdn.poehali.dev/projects/5588ba62-ceb3-49e1-a94e-65aa3ee7362f/files/0ee78851-55db-4eb0-8706-127e8a485c4d.jpg',
+    description: 'Итальянский хлеб с оливковым маслом и розмарином'
   }
 ];
 
