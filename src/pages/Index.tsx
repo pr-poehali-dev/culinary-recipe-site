@@ -115,7 +115,7 @@ export default function Index() {
                     <div className="bg-accent/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <Icon name={category.icon as any} size={32} className="text-primary" />
                     </div>
-                    <h4 className="font-bold text-lg mb-2">{category.name}</h4>
+                    <h4 className="font-bold text-lg mb-2 font-sans">{category.name}</h4>
                     <Badge variant="secondary">{category.count} рецептов</Badge>
                   </CardContent>
                 </Card>
